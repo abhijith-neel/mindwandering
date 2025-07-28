@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Warm, sophisticated color palette */
+    --background: 45 15% 97%;
+    --foreground: 25 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 25% 15%;
+
+    /* Warm terracotta primary */
+    --primary: 15 65% 45%;
+    --primary-foreground: 45 15% 97%;
+
+    /* Soft secondary tones */
+    --secondary: 35 20% 90%;
+    --secondary-foreground: 25 25% 15%;
+
+    --muted: 40 15% 92%;
+    --muted-foreground: 25 10% 55%;
+
+    /* Gentle accent */
+    --accent: 25 35% 85%;
+    --accent-foreground: 25 25% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 45 15% 97%;
+
+    --border: 35 15% 85%;
+    --input: 35 15% 85%;
+    --ring: 15 65% 45%;
+
+    /* Custom design tokens */
+    --warm-gradient: linear-gradient(135deg, hsl(25 45% 85%), hsl(35 35% 90%));
+    --subtle-shadow: 0 4px 12px hsl(25 25% 15% / 0.08);
+    --elegant-shadow: 0 8px 25px hsl(25 25% 15% / 0.12);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 15% 8%;
+    --foreground: 45 15% 92%;
+
+    --card: 25 15% 10%;
+    --card-foreground: 45 15% 92%;
+
+    --popover: 25 15% 10%;
+    --popover-foreground: 45 15% 92%;
+
+    --primary: 15 65% 55%;
+    --primary-foreground: 25 15% 8%;
+
+    --secondary: 25 10% 18%;
+    --secondary-foreground: 45 15% 92%;
+
+    --muted: 25 10% 18%;
+    --muted-foreground: 25 8% 65%;
+
+    --accent: 25 20% 22%;
+    --accent-foreground: 45 15% 92%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 45 15% 92%;
+
+    --border: 25 10% 20%;
+    --input: 25 10% 20%;
+    --ring: 15 65% 55%;
+
+    /* Dark mode design tokens */
+    --warm-gradient: linear-gradient(135deg, hsl(25 20% 15%), hsl(35 15% 18%));
+    --subtle-shadow: 0 4px 12px hsl(0 0% 0% / 0.25);
+    --elegant-shadow: 0 8px 25px hsl(0 0% 0% / 0.35);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "liga" 1, "kern" 1;
+  }
+
+  /* Beautiful typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl leading-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl leading-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl leading-tight;
+  }
+
+  p {
+    @apply leading-relaxed text-foreground/90;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
