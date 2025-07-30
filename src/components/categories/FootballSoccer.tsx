@@ -1,46 +1,37 @@
-import { useState } from "react";
-import { ChevronDown, ChevronRight } from "lucide-react";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { CategoryCard } from "@/components/CategoryCard";
 
 export const FootballSoccer = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <Card className="shadow-subtle hover:shadow-elegant transition-all duration-300 bg-card border border-border">
-      <Button
-        variant="ghost"
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full p-6 h-auto justify-between hover:bg-transparent"
-      >
-        <div className="text-left space-y-2">
-          <h3 className="text-xl font-serif font-medium text-foreground">
-            Football/Soccer
-          </h3>
+          <CategoryCard title="Football/Soccer">
+        <h1 className="border-b border-border pb-2 mb-4">2025</h1>
+        <div className="space-y-3">
+          <h3>7/29 Barcelona's 10 situation </h3>
+          <p>We literally have one of the most amazing problems to have, and honestly there is an amazing way that we can solve this problem too. We have 4+ viable 10 options and they are all some of the best players globally in that position.</p>
+          <p>I think the number one is Dani Olmo. The La Masia grad is probably the best option in that position. This man is a natural second striker, almost perfect in tight spaces and ready to drop to grab the ball. He is a great option for teams that are a bit more spread out, connects well with Frenkie and Lamine, and can turn the goal machine on when we need him to. I think his biggest drawback is how injury prone he is, but Hansi has said that they are putting him on the Pedri routine to keep him fit. Against teams that run like a mid block and don't overload the box like crazy, it's game over if Olmo is on the field.</p>
+          <p>In my opinion, the clear number 2 is Fermin. The kid is absolutely class; a fast, skillfull player with a good shooting ability. I would expect that he is going to be insane against high block teams with a large amount of counter attacking space in the back. Put him in the middle of our half when the opponent is attacking and the goals are going to flow like crazy. He'd also work effectively against box overload teams with his ability to shoot from outside and on the edge of the box. Getting him to paint corners is going to be crazy.</p>
+          <p>Dro is a new player that gives us what feels like a Pedri-esque deeper Fermin. I haven't seen enough of the player to make any real assumptions on him, but I think he is the 10 version of Pedri (I think Pedri is clearly an 8 and putting him in the 10 is not the way to unlock him maximally). That being said, let's see how he plays out.</p>
+          <p>With the signing of Marcus Rashford, we now have a new, interesting option of playing Raphinha as a 10. I feel like a lot of people are very conflicted about how this could play out, but I think it'll actually be incredible. Against teams that are very wing heavy, Raphinha can actually provide a new overload that allows him to play from the edge into the middle without sacrificing any of our wing options. Currently Raphinha sort of plays this cut inside to second striker position while playing as a RW. He starts on the edge, and when he gets the ball he moves centrally, with Balde moving into the wing position, Pedri being the backstop, Frenkie (or whoever the other midfielder is) moving into a defensive position and the 10 moving into a second midfielding role. 
+            Although all of the positions are covered, there are a number of players that are effectively out of position, making us marginally vulnerable. Now that we have Rashford, Raphinha can now start an attack on both the left or the right (grabbing the ball above the fullback but below the winger), cut inside, and now has good options ahead of him on both sides, has both midfielders as backstops, allows both fullbacks to sit a bit deeper, creating a better defensive structure (although let's be honest here they are gonna run their overlaps like always, but now they don't have to as much) in attack. This allows Raphinha to be even more creative and do even more than he did last season.</p>
+          <p>There are definitely some more open options such as Gavi, moving Pedri up or others, but with these 4 I don't think the other options will see much play time (unless Flick decides to cook something crazy). So let's see what happens.</p>
+          <p>*Bonus thought: Lamine Yamal just got a new 5'11 passing option in the box with Rashford. If Yamal can get his form back, there is 10-20 G/A on that linkup alone.*</p>
         </div>
         
-        <div className="ml-4">
-          {isOpen ? (
-            <ChevronDown className="h-5 w-5 text-primary" />
-          ) : (
-            <ChevronRight className="h-5 w-5 text-primary" />
-          )}
+        <div className="space-y-3">
+        <h3>7/27 Barcelona's First Preseason Game</h3>
+        <p className="text-foreground/90 leading-relaxed">Barça played their first preseason game against Vissel Kobe. Here are some of the things that I noticed:</p>
+        <p>1. Flick's signings and call ups this season are insane. To think that Rashford (who is currently nursing an injury) might be the worst player relative to his expected quality is unbelievable. This feels like an absolute testament to the quality of Hansi Flick and no one else. 
+          His ability to identify and analyze raw talent and figure out how to use it effectively at the highest levels needs to be studied.</p>
+        <p>2. How did La Masia spawn another midfielding talent in Pedro Gonzalez? The way this kid glides around the pitch is insane, and his solid shooting ability makes him seem like a combination of Pedri and Fermin. The 10 spot at Barça is literally the most crowded place in all of football and Dro is making it even harder for the best to shine there. More on this in another essay.</p>
+        <p>3. When I first heard the name Roony Bardghji all I could think of was Malcom coming to Barcelona. A no name kid that did some good stuff in a lower-ish league that just got the move of his life while fans were wondering why we spent our money there. Unfortunately for Malcom, he was thrust into playing the right wing role behind the goat and Ousmane Dembélé. 15 appearances and 1 goal later, unable to find good footing at Barça, Malcom was shipped to Russia at a loss to the club. 
+          After watching some of Bardghji's highlights at F.C. Copenhagen, I got a similar vibe from him. A fast skiller that hasn't played much against really big teams. That being said, what I saw on the pitch against was a much different player than Malcom. Bardghji is really well composed and very calm on the ball. He isn't making excessive moves and trying too difficult take-ons when there are clearly viable options across the field. 
+          He understands well the importance of retaining possession in Barça's game and he seems to make up where Lamine Yamal lacks in the shooting department. All in all, he is a solid backup option to Lamine. He may not provide the crazy attacking talent that Yamal provides, but he will let us continue to play our brand of football and not see the team absolutely break down.</p>
+        <p>4. Joan Garcia is class. I can't tell if it's just because we've been dealing with a deteriorating Ter Stegen over the last few years but this is a solid keeper that will keep us in good form. He and Szczęsny are gonna make a really strong duo.</p>
+        <p>5. With the exception of Lamine Yamal, the rest of the team looks either the same or slightly better than where we left off last season. Raphinha and Pedri are both playing like they are gonna win the Ballon d'Or next season, Christensen is back and he is even better than before. No need to mention Balde, Kounde, De Jong and Eric. Casado is back from his injury and looks just as good as he did before he left. 
+          Lewandowski looks like he has at least one more good season in him, and Flick is gonna milk that to the absolute max.</p>
+        <p>6. Lamine is a child and he needs to recognize that. Sure he is a generational talent, but if he doesn't understand that the only reason that he is getting all of this press and attention is because he is good at football he is gonna learn the truth incredibly quickly. Half the dribbles he messed up were because he was trying to do more than he needed to and ended up getting caught. Mad props to the left back Nagato and the LCB Yuki Honda for locking Lamine up but a more humble and focused version of Yamal would've had both of them picking worms out of the grass all game.</p>
+        <p>7. I hate to say this but Gavi is getting more washed by the day. I can't tell if it's a position issue or a player issue or what's up but the way that things are going don't look too hot for him. It's just not as great free flowing football that we are all used to from him. This feels much more forced and not normal. Idk what to call it exactly but it's not that great.</p>
+        <p>All of these are just my thoughts from one game. The way that everyone actually plays out and the way that the season ends up going may be much different from this, but here we are.</p>
         </div>
-      </Button>
-
-      <div
-        className={cn(
-          "overflow-hidden transition-all duration-300 ease-in-out",
-          isOpen ? "max-h-none opacity-100" : "max-h-0 opacity-0"
-        )}
-      >
-        <div className="min-h-[400px] border-t border-border p-6">
-            <div className="text-foreground/90 leading-relaxed">
-              <p className="text-foreground/90 leading-relaxed">Content is coming soon.</p>
-            </div>
-        </div>
-      </div>
-    </Card>
+      </CategoryCard>
   );
 }; 
