@@ -5,6 +5,7 @@ import { StartupsOpsFundraising } from "@/components/categories/StartupsOpsFundr
 import { CompaniesThatShouldExist } from "@/components/categories/CompaniesThatShouldExist";
 import { FootballSoccer } from "@/components/categories/FootballSoccer";
 import { HobbiesAndHyperfixations } from "@/components/categories/HobbiesAndHyperfixations";
+import { ThoughtOfTheDay } from "@/components/categories/ThoughtOfTheDay";
 
 const Index = () => {
   return <div className="min-h-screen bg-background">
@@ -25,6 +26,7 @@ const Index = () => {
           {/* Category Sections */}
           <div className="space-y-8">
             <div className="space-y-4">
+              <ThoughtOfTheDay />
               <AIAndTech />
               <StartupsOpsFundraising />
               <CompaniesThatShouldExist />
