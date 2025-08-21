@@ -26,12 +26,12 @@ const Index = () => {
           {/* Category Sections */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <ThoughtOfTheDay />
               <AIAndTech />
               <StartupsOpsFundraising />
               <CompaniesThatShouldExist />
               <FootballSoccer />
               <HobbiesAndHyperfixations />
+              <ThoughtOfTheDay />
             </div>
           </div>
         </div>
